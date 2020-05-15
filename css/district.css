@@ -1,0 +1,198 @@
+
+body {
+    margin: 0;
+    height:auto;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+/* .....Navbar starts ..... */
+
+.logo
+{
+    width:60px;
+    height:60px;
+    cursor: pointer;
+    margin:0px 20px;
+}
+
+.navbar{
+    padding:10px 1%;
+    background-color:rgba(255,255,255,.3);
+    border-bottom:1px solid yellowgreen;
+
+}
+.navbar a{
+    color:black;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    transition: .5s all;
+    padding: 0px 2px;
+    list-style: none;
+    text-decoration: none;
+    margin:0px 2px;
+   
+}
+
+.navbar ul li a{
+    transition: all .3s ease 0s;
+    color:green;
+}
+
+.navbar ul li a:hover{
+    color:lightblue;
+}
+.button
+{
+  border-radius: 20px;
+  height:30px;
+  width:50px;
+  align-items: center;
+  color:darkgreen;
+  background: yellowgreen;
+}
+.button a:hover
+{
+color:white;
+text-decoration: none;
+}
+
+
+/* .....Navbar ends ..... */
+
+.mainbg
+{
+  
+  width:100%;
+  height:90vh;
+  /* background-image: url("../images/index/header-district.jpeg");  */
+  background-image: url("../Images/logos/blue-and-green-abstract-background-vector-1932061.jpg");
+  background-size:cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel-item
+{
+    background-position: center;
+    background-size: cover;
+    animation: zoom;
+}
+ /*..... /Navbar styling ends.....*/
+
+ 
+.maindiv
+{ 
+  width:75%;
+  height:70vh;
+  background-attachment: fixed; 
+  position: relative;
+}
+
+.maindiv img{
+
+  margin-left: 180px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-style: outset;
+  overflow:hidden;
+  /* align-items: center; */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  margin-left: 180px;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+.container-det
+{
+    margin:2em;
+    padding:3em;
+}
+
+.zoom{
+  transition: transform .2s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.3); 
+}
+
+.facilities {
+ 
+    padding:2em;
+    margin-bottom: 0em;
+}
+.facilities i{
+    color:rgb(87, 236, 157);
+}
+
+/*..... Footer Styling.....*/
+
+#footerdiv{
+    border-style:inset;
+    background-image: url("../Images/logos/blue-and-green-abstract-background-vector-1932061.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 30px;
+    margin-top: 50px;
+    height: auto;
+}
+
+.btnicon
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:#f1f1f1 ;
+    margin:10px;
+    border-radius: 20%;
+    box-shadow: 0 5px 15px 5px darkslategray;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s all;
+}
+.btnicon i{
+  line-height: 40px;
+}
+
+.btnicon:hover{
+    background-color:rgb(29, 219, 118);
+}

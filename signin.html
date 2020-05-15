@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/signin.css">
+    <link rel="icon" href="./Images/logos/1200px-Kerala_God's_Own_Country_Logo.svg.png">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+</head>
+
+<body>
+<div class="main-container">
+      <div class="row" style="height: 100vh;">
+        <div class="logo_disp col-md-6">
+              <header class="top-head">
+                <img id="logo" src="./Images/logos/1200px-Kerala_God's_Own_Country_Logo.svg.png">
+              </header>
+         </div>
+       <div class="col-md-6">
+         <div class="login">
+           <h1>Log In</h1>
+           <br>
+             <form action="home.html" id="frm_login">
+              <div class=" inputbox">
+               <input type="text" name="" autocomplete="off" id="uid" title="Enter your User Name" required>
+               <label>User name</label>
+               <!-- <span class="error-msg"></span> -->
+              </div>
+              <div class=" inputbox">  
+               <input type="password" id="pwd" title="Enter your existing password" required>
+               <label>Password</label>
+               <!-- <span class="error-msg"></span> -->
+              </div>
+              <div class = "inputbox" >
+              <!-- <label> -->
+                <small class="rmb">Remember me</small>
+                <input type="checkbox">
+                <!-- <span></span> -->
+               
+              <!-- </label> -->
+              <a href="#" class="forgetpass">Forget Password?</a>
+            </div>
+               <button class="btn-login" type="submit" onclick="return validate();">Log In </button>
+               <hr style = "width:100%; background-color: slategrey; padding:0; margin:0">
+               <p style="color: slategrey;"> New User ?? <a href="signup.html" >Sign Up</a></p>
+             </form>
+         </div>
+         </div>
+      </div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<script src="./js/signin.js"></script>
+
+</body>
+</html>

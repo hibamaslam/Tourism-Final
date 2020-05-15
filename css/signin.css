@@ -1,0 +1,164 @@
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+    overflow: hidden;
+   
+  }
+  
+  .main-container{
+    width:1550px;
+    height:750px;
+    background-image: url("../images/signup-in/signup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #logo{
+    width: 350px; 
+    height:350px;
+    display: block;
+    margin-left:190px;
+    margin-top:10px;
+    position: relative;
+    padding: 20px;
+  
+  }
+
+  .login
+  {
+    width:350px;  
+    background: rgba(0,0,0,0.7);
+    box-shadow:0 15px 25px 0 rgba(0,0,0,0.5);
+    padding: 40px;
+    margin-top:180px;
+    top:50%;
+    left:50%;
+    margin:15%;
+    text-align: center;
+    border-radius: 10px;
+    
+  }
+  #frm-login
+  {
+    height:40px;
+  }
+  
+  .login h1{
+    color: #1c8adb;
+    margin: 0 0 10px;
+    padding:3px 0;
+  }
+  .login .inputbox
+  {
+    position: relative;
+    outline: none;
+  }
+  
+  .login .inputbox input[type = "text"],input[type = "password"]
+  {
+   
+    background: transparent;
+    font-size: 18px;
+    padding:10px 0;
+    margin:5px 0;
+    width:100%;
+    letter-spacing: 1px;
+    line-height: normal;
+    color:#fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline:none;
+    
+  }
+
+  .login .inputbox label
+  {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    padding:18px 0;
+    font-size: 15px;
+    color:#fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login .inputbox input:focus ~ label,
+  .login .inputbox input:valid ~ label
+  {
+      top:-18px;
+      left:0;
+      color:#1c8adb;
+      font-size: 14px;
+  }
+
+  .login .inputbox input[type="checkbox"]
+  {
+  display: inline;
+  margin-left: -15%;
+  }
+
+  .rmb
+  {
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    color: slategrey;
+    font-size: 13px;
+  }
+
+.forgetpass {
+    position:relative;
+    float: right;
+    margin-top: 0px;
+    right: 0px;
+  }
+
+  .btn-login
+  {
+  
+    background: transparent;
+    background-color: #1c8abd;
+    width:50%;
+    padding:10px 20px;
+    color:#fff;
+    margin:30px;
+    font-size:15px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    /* margin-top:20px ; */
+    transition: 0.3s;
+  }  
+  
+  .btn-login:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+  
+  .btn-login a{
+    text-decoration:none;
+    color:white !important;
+  }
+  
+  @keyframes bounce {
+      from{
+          margin-top: 0%;
+          transform: translateY(-30px);
+      }
+      to
+      {
+        margin-top: 15%;
+          transform: translateY(-15px);
+      }
+    }
+    /* 0%, 20%, 50%, 80%,
+    100% {transform: translateY(10px);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);}  */

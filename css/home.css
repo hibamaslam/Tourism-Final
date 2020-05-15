@@ -1,0 +1,365 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+	transition: all ease-in-out 250ms;
+}
+
+body {
+    margin: 0;
+    height:auto;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+    clear: both;
+}
+/* .....Navbar starts ..... */
+
+.logo
+{
+    width:60px;
+    height:60px;
+    cursor: pointer;
+    margin:0px 20px;
+}
+
+.navbar{
+    padding:10px 1%;
+    background-color:rgba(255,255,255,.3);
+    border-bottom:1px solid yellowgreen;
+
+}
+.navbar a{
+    color:black;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    transition: .5s all;
+    padding: 0px 2px;
+    list-style: none;
+    text-decoration: none;
+    margin:0px 2px;
+   
+}
+
+.navbar ul li a{
+    transition: all .3s ease 0s;
+    color:green;
+}
+
+.navbar ul li a:hover{
+    color:lightblue;
+}
+.button
+{
+  border-radius: 20px;
+  height:30px;
+  width:50px;
+  align-items: center;
+  color:darkgreen;
+  background: yellowgreen;
+  outline: none;
+  overflow: hidden;
+}
+.button a:hover
+{
+color:white;
+text-decoration: none;
+}
+
+
+/* .....Navbar ends ..... */
+
+/* ...............header.................*/
+
+
+.mainbg
+{
+    background:url("../Images/home/kerala-hills-munnar-holiday-package-Houseboat-Alleppey-with-weekend-trip.png");
+  width:100%;
+  height:100vh;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+}
+.header h1
+{
+    font-size:30px;
+    text-shadow: 0px 0.5px 2px rgba(0,0,0,0.5);
+    color:black;
+    /* position: relative; */
+    align-items: center;
+    animation:backInDown 1s;
+}
+
+.header h2
+{
+    text-shadow: 0px 0.5px 2px rgba(0,0,0,0.5);
+    animation:zoomInDown 2s;
+}
+.header h4{
+    text-shadow: 0px 0.5px 2px rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size:50px;
+    animation:lightSpeedInRight 5s;
+
+  
+}
+
+/*.......... /header......*/
+
+/*.......... Kerala description ................*/
+#keraladesc
+{
+    padding:50px 50px;
+    height: 100%;
+}
+
+hr.rounded {
+    border-top: 8px solid yellowgreen;
+    border-radius: 5px;
+    padding-bottom:25px;
+  }
+
+  h1
+  {
+      padding-bottom: 25px;
+      text-align: center;
+  } 
+
+h2
+{
+    font-size:2rem;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/*.......... /Kerala description ................*/
+
+/*..... carousel - Popular Destinations .....*/
+
+.image-cards{
+    width:300px;
+    max-height:300px;
+    box-shadow: 5px 10px #888888;
+    overflow:hidden;
+    transition: .5s ease;
+}
+.image-cards:hover{
+    transform: scale(1.075);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
+}
+
+/*..... /carousel .....*/
+
+/*.........offers .........*/
+
+.offers
+{
+    padding-top:0;
+    margin-top:8em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+  
+.items
+{
+    margin:0;
+    align-items: center;
+    position: relative;
+}
+.items img{
+    display:block;
+    margin:0;
+}
+
+.item-details{
+    position: absolute;
+	z-index: 100;   
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: white;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 1em;
+}
+
+.item-details p{
+    margin: 1em;
+}
+
+
+@media (min-width: 37rem) {
+	.items {
+		width: 42%;
+		float: left;
+	}
+}
+
+@media (min-width: 60rem) {
+	.items {
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        padding:0;  
+        overflow: hidden;
+	}
+
+	.item-details {
+		transform: translateY(120%);
+	}
+
+	.items:hover .item-details {
+        transform: translateY(0%);
+        
+	}
+}
+
+.btn
+{
+    /* display: inline-block; */
+	font-size: 1em;
+    padding: .5em 1.75em;
+    height:50px;
+    width:150px;
+}
+
+.btn-dark {
+	background-color:yellowgreen;
+	border-color:slategrey;
+}
+.btn-dark:hover,
+.btn-dark:focus
+{
+    background-color: yellowgreen;
+	color: yellowgreen;
+}
+
+.btn-accent {
+    font-size: .8em;
+    height:30px;
+    width:100px;
+    margin-left:1em;
+    background-color:#232323;
+    color: white;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+	border:1px solid yellowgreen;
+	color: yellowgreen;
+}
+
+/*.........offers .........*/
+
+/*......... Divider ............*/
+.Divider
+{
+    overflow: hidden;
+    margin-top:3em;
+    height:12em;
+    width:auto;
+    background: url("../Images/home/nature1.jfif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 5em 0;
+    margin-bottom:0;
+}
+
+.title-divider {
+    font-size: 2.5rem;
+	margin-bottom: 1.5em;
+    margin-top: 0;
+	margin: 0 0 .2em;
+}
+
+/*......... Divider ............*/
+
+/*......contact section ........*/
+
+.contact
+{
+    margin-top:5em;
+    margin-bottom: 3em;
+}
+
+.gmap_canvas iframe
+{
+    border-radius: 10px;
+}
+
+/*....... Footer starts .......*/
+
+
+#footerdiv{
+   
+ 
+    background: #232323;
+	color: #fff;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0px;
+    height: 82vh;
+    padding-bottom:0;
+}
+
+
+.footer{
+    overflow: hidden;
+    margin-top:0;
+    padding-top:2px;
+}
+  .btnicon
+  {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background:#f1f1f1 ;
+      margin:13px;
+      border-radius: 20%;
+      box-shadow: 0 5px 15px 5px darkslategray;
+      overflow: hidden;
+      position: relative;
+      transition: 0.3s all;
+  }
+  .btnicon i{
+    line-height: 30px;
+  }
+  
+  .btnicon:hover{
+      background-color: yellowgreen;
+  }
+ /*...newsletter ...*/
+ .container-newsletter
+ {
+     padding:10px;
+     margin:0;
+ }
+/*...../footer .....*/

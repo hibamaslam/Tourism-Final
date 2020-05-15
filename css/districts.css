@@ -1,0 +1,283 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+	transition: all ease-in-out 250ms;
+}
+
+body {
+    margin: 0;
+    height:auto;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+
+.clearfix::after,
+section::after,
+footer::after {
+	content: '';
+	display: block;
+    clear: both;
+}
+/* .....Navbar starts ..... */
+
+.logo
+{
+    width:60px;
+    height:60px;
+    cursor: pointer;
+    margin:0px 20px;
+}
+
+.navbar{
+    padding:10px 1%;
+    background-color:rgba(255,255,255,.3);
+    border-bottom:1px solid yellowgreen;
+
+}
+.navbar a{
+    color:black;
+
+}
+
+.navbar ul li{
+    display: inline-block;
+    transition: .5s all;
+    padding: 0px 2px;
+    list-style: none;
+    text-decoration: none;
+    margin:0px 2px;
+   
+}
+
+.navbar ul li a{
+    transition: all .3s ease 0s;
+    color:green;
+}
+
+.navbar ul li a:hover{
+    color:lightblue;
+}
+.button
+{
+  border-radius: 20px;
+  height:30px;
+  width:50px;
+  align-items: center;
+  color:darkgreen;
+  background: yellowgreen;
+}
+.button a:hover
+{
+color:white;
+text-decoration: none;
+}
+
+
+/* .....Navbar ends ..... */
+
+.mainbg
+{
+  
+  width:100%;
+  height:80vh;
+  /* background-image: url("../images/index/header-district.jpeg");  */
+  background-image: url("../Images/logos/blue-and-green-abstract-background-vector-1932061.jpg");
+  background-size:cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* Sidebar/left column */
+.row-map
+    {  
+    padding: 5px 5px 5px 5px;
+        display: flex;
+        flex-wrap: wrap; 
+}
+
+.side {
+    box-align:center;
+    flex: 20%;
+    background-color:#f1f1f1;
+    padding: 20px;
+    left:15px;
+  }
+  
+  /* Main column */
+  .main { 
+    background-color:#f1f1f1;
+    flex: 70%;
+    align-items: center;
+    /* background-color: white; */
+    padding: 20px;
+  }
+
+  .container-main
+  {
+   
+      border: radius 45%;
+      padding: 20px;
+      width:100%;
+      height:40vh;
+      left:30%;
+  }
+.container-main img
+{
+    width:100%;
+    transition: all .5s;
+}
+.container-main img:hover
+{
+    transform: scale(1.5);
+}
+
+
+/*------carousel styling -------*/
+
+.carousel-example-1z
+{
+    margin:0px;
+    width:100vh;
+}
+.carousel-inner
+{
+    margin:0px;
+    width:100vh;
+}
+.carousel-item
+{
+    display: inline-block;
+    left:200px;
+    width:100vh;
+}
+
+
+/*------/carousel styling -------*/
+
+/*..... districts styling .....*/
+
+.districts
+{   
+    margin-top: 5em;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-body
+{
+    padding: 70px 0;
+    line-height:10px;
+    font-size: small;
+    margin-top:0.5px;
+    height:50px;
+    width:100%;
+    border-style: ridge;
+    box-shadow: grey;
+    background-color: darkgrey;
+    text-align: center;
+   
+}
+
+.card
+{
+    color:black;
+    border-style:outset;
+    box-shadow: grey;
+    position: absolute;
+    margin-top:50px;
+    margin-bottom: 50px;
+    background: #000;
+}
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+.card img
+{
+    transition: .5s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  
+}
+.card:hover .img {
+   
+    opacity: .5;
+    transform: scale(1.075);
+    transform: translateX(30%);
+   
+  }
+
+  .card img:hover
+  {
+    transform: scale(1.075);
+  }
+
+    .card .details {
+
+        border-style:outset;
+        position: absolute;
+        font-family: sans-serif;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color:black;
+        background-color: rgba(47,79, 79, 0.5);
+        transition: .5s;
+        transform-origin: up;
+        transform: perspective(2000px) rotateY(90deg);
+    }
+    .card:hover .details {
+        
+        transform: perspective(2000px) rotateY(0deg);
+       
+    }
+    .card:hover .details a{
+        color:black;
+        font-family: sans-serif;
+    }
+
+    /*..... /districts styling .....*/
+
+    /* ..... Footer styling ..... */
+
+  #footerdiv{
+    border-style:inset;
+    background-image: url("../Images/logos/blue-and-green-abstract-background-vector-1932061.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 30px;
+    margin-top: 50px;
+    height: auto;
+}
+
+.btnicon
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:#f1f1f1 ;
+    margin:10px;
+    border-radius: 20%;
+    box-shadow: 0 5px 15px 5px darkslategray;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s all;
+}
+.btnicon i{
+  line-height: 40px;
+}
+
+.btnicon:hover{
+    background-color:rgb(29, 219, 118);
+}
